@@ -1,0 +1,136 @@
+:root {
+  --main-color: #5e00bb;
+  --secondary-color: #be06ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(130.09deg, #5e00bb 7.93%, #be06ff 100%);
+}
+
+body.swal2-height-auto {
+  height: 100vh !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  padding: 35px 35px;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.container .title {
+  font-size: 2rem;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  margin: 20px 0;
+}
+
+.container form.login {
+  height: 200px;
+}
+
+.container form.password-recovery {
+  height: 100px;
+}
+.container form.reset_password {
+  height: 250px;
+}
+
+
+
+
+.container form input {
+  height: 45px;
+  padding-left: 8px;
+  border-radius: 5px;
+  border: 0;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.364);
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.container form input[type="submit"] {
+  background: linear-gradient(130.09deg, #5e00bb 7.93%, #be06ff 100%);
+
+  color: white;
+  border: none;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.container form .remember {
+  height: 45px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container form input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.container p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.container a {
+  color: var(--secondary-color);
+}
+
+.container a.logout {
+  margin-top: 20px;
+
+  width: 150px;
+  height: 45px;
+
+  color: white;
+  background: linear-gradient(130.09deg, #5e00bb 7.93%, #be06ff 100%);
+
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.2s;
+}
+
+.container label {
+  color: var(--main-color);
+}
+
+.container label span {
+  color: #333;
+}
+
+.container form input[type="submit"]:hover,
+.container a.logout:hover {
+  opacity: 0.8;
+}
