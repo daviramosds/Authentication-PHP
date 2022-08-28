@@ -22,7 +22,7 @@
 cd www
 ```
 
-### create a ".env" file and complete it based in the ".env.exemple"
+### create a ".env" file and complete it based in the ".env.example"
 
 ```bash
 touch .env
