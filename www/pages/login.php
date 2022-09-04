@@ -17,7 +17,7 @@
         $password = $_POST['password'];
 
         if (!$email || !$password) {
-            Alert::Error(('Empty data is now allowed'));
+            Alert::Error(('Empty data is not allowed'));
         } else {
             if (isset($_POST['remember'])) {
                 User::login($email, $password, true);
